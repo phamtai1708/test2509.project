@@ -1,0 +1,62 @@
+div.movieBoxBox {
+  margin: 0 auto;
+  width: 50vw;
+  height: 60vh;
+  position: relative;
+  top: 20vh;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  border-radius: 8px;
+}
+div.movieBoxBox button.btnClose {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0;
+  color: #000;
+  background-color: transparent;
+}
+div.movieBoxBox button.btnClose:hover {
+  background-color: rgb(107, 105, 255);
+  color: #ffffff;
+}
+div.movieBoxBox div.imgBox img {
+  width: 20vw;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  bottom: 5vh;
+  right: 2vw;
+}
+div.movieBoxBox div.movieDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 3rem 0 0;
+  text-align: left;
+}
+div.movieBoxBox div.movieDescription p.mbp1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+div.movieBoxBox div.movieDescription p.mbp2 {
+  margin: 0;
+  color: #d1d1d1;
+  font-size: 0.8rem;
+}
+div.movieBoxBox div.movieDescription p.mbp3 {
+  color: rgb(71, 71, 71);
+  letter-spacing: 2px;
+}
+div.movieBoxBox div.movieDescription button {
+  background-color: #fd8a31;
+  color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
