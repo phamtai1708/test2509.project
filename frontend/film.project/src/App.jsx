@@ -30,7 +30,7 @@ function App() {
       }
     };
     fetchMovies();
-  }, []);
+  }, [prvCount, nextCount]);
   if (error) {
     return <div>Error: {error}</div>;
   }
@@ -44,22 +44,16 @@ function App() {
   function handleClickPrevious() {
     if (prvCount > 0) {
       setPrvCount(prvCount - 1);
-      renderMovie();
+      setNextCount(nextCount - 1);
     }
   }
   function handleClickNext() {
     if (nextCount < lengthh - 1) {
+      setPrvCount(prvCount + 1);
       setNextCount(nextCount + 1);
-      renderMovie();
     }
   }
-  function renderMovie() {
-    let result = [];
-    for (let i = prvCount; i <= nextCount; i++) {
-      result.push(dataa[i]);
-    }
-    setMovies(result);
-  }
+
   return (
     <>
       <div className="container">
